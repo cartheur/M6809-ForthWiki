@@ -37,3 +37,9 @@ Accompanying source code can be found on the [CamelForth](http://www.camelforth.
 * [Build Your Own (Cross-) Assembler...in Forth](/chapters/forth/code/toc/tcjassem.txt)
 * [Build Your Own Assembler, Part 2: a 6809 Forth Assembler](/chapters/forth/code/toc/6809asm.txt)
 * [6809 Forth Assembler Listing](/chapters/forth/code/toc/6809asmlisting.txt)
+
+#### Computer Programs
+* [CamelForth for the 6809, with Chromium metacompiler](/chapters/forth/code/toc/cam09-10.zip)
+* [CamelForth for the 8051, w/multitasker](/chapters/forth/code/toc/cam51-16.zip)
+* [CamelForth for the Z80 under CP/M](/chapters/forth/code/toc/cam80-12.zip)
+* [CamelForth for the 8086 under MS-DOS](/chapters/forth/code/toc/cam86-10.zip)
