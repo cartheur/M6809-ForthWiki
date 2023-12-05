@@ -18,16 +18,18 @@ It finally dawned on me that what I wanted was a dirt cheap, commonly available,
 1. can "stretch" its memory cycle to accommodate slow memory, i.e., has a READY or WAIT input;
 2. has some direct memory modify instruction, such as ROR M or INC M. 
 
-(Strictly speaking, this second condition can be relaxed . . . but at a substantial cost in performance and in extra support logic.)
+Strictly speaking, this second condition can be relaxed . . . but at a substantial cost in performance and in extra support logic.
 
 I was tempted to design around the Z80, since it's just about the cheapest suitable CPU -- but I'm up to my ears in Z80 systems. The 6809 costs only $1 more, is far superior for Forth work . . . and I had some old 6809 hardware designs lying around, and a Forth assembler and Forth kernel for it.
 
-(I will, however, throw in some Z80 design notes. If someone wants to design and prototype a Z80 multiprocessor system on this model, I'm sure TCJ would be happy to print it!)
+I will, however, throw in some Z80 design notes. If someone wants to design and prototype a Z80 multiprocessor system on this model, I'm sure TCJ would be happy to print it!
 
 #### THE 6809 UNIPROCESSOR
 The journey of a thousand miles begins with one step. - Lao-Tsze
 
-. . . and the journey to a multiprocessor begins with a single CPU. New CPU boards are hard enough to debug without introducing peculiar memory logic. So, first build a uniprocessor and make it work; then add the multiprocessing extensions.
+And the journey to a multiprocessor begins with a single CPU. New CPU boards are hard enough to debug without introducing peculiar memory logic. So, first build a uniprocessor and make it work; then add the multiprocessing extensions.
+
+![fig.1](/chapters/images/ch-1/fig.1.png)
 
 Figure 1 shows the 6809 "core": CPU and memory. The signal labels follow the OrCad convention, using a backslash instead of an over-bar to indicate logical inversion (e.g., RD\ is "read-bar," an active low read strobe).
 
@@ -48,7 +50,7 @@ The 6809 is easy to interface to memory. Every CPU clock cycle is a memory cycle
 
 I find separate RD\ and WR\ strobes more useful for most memory and I/O devices. These can be generated from R/W\ and E with an inverter and two NAND gates, but I prefer to use half of a 74HCT139 (U5B). It's easier to wirewrap, and I had a spare '139 section on the board anyway.
 
-![fig.3](/chapters/images/fig.3.png)
+![fig.3](/chapters/images/ch-1/fig.3.png)
 
 Figure 3 shows the timing diagram for the CPU [MOT83]. The CPU runs at 1/4 of the oscillator frequency, and outputs clock signals E and Q in phase quadrature (Q leads E by 90 degrees). With a 3.6864 MHz clock, the data strobe E is high for 540 nsec, plenty for even slow memories. Note that the address is valid at the rising edge of Q. You can generate a wider data strobe by using E+Q (the logical OR of E and Q); this may be desirable if you use a faster 6809.
 
@@ -68,7 +70,7 @@ In any multiprocessor system it is important to have "private" memory for each p
 
 For simplicity of decoding, I've allotted an 8K region to the 2681 DUART. This is extravagant, since the 2681 requires only 16 memory locations.
 
-![fig.2](/chapters/images/fig.2.png)
+![fig.2](/chapters/images/ch-1/fig.2.png)
 
 Figure 2 shows how to use a supplementary address decoder to divide this 8K space into four 2K regions; this allows three I/O devices in addition to the 2681. Note that some of the decoding done by U6A is duplicated in the 74HCT138, U10. This illustrates an important design principle. You might generate eight chip selects instead of four, by routing CS6\ to an active-low gate input of U10, and then decoding A10 through A12. But this would cascade the propagation delays of two decoders! After many CPU projects, I have concluded that address decoding should be done in parallel, preferably with no more than one stage of decoder delay to any address strobe.
 
