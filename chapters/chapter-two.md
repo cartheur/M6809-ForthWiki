@@ -92,7 +92,7 @@ In the next chapter I'll add this logic to the 6809 uniprocessor, design the bus
 
 [ROD92] Rodriguez, B. J., "Forth Multitasking in a Nutshell," The Computer Journal #58 (Nov/Dec 1992).
 
-SIDEBAR: WHY NOT PALS?
+#### SIDEBAR: WHY NOT PALS?
 A TCJ reader asked why I'm designing with discrete logic instead of PALs. I have several reasons:
 
 1. PALs -- especially 15 nsec or faster -- are still rather expensive. Jameco lists the most basic PALs at $2.50 each, and there is no way I could do the complete 6809 board with fewer than two. On the other hand, my junkbox is well stocked with 7400 series parts and wirewrap sockets.
