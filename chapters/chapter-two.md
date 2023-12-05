@@ -1,2 +1,3 @@
-# M6809-Forth
-A renewal of Brad Rodriguez's quest for a multiprocessing system around the Motorola 6809
+## MULTIPROCESSING FOR THE IMPOVERISHED
+### Part 2: Sharing the Bus
+
