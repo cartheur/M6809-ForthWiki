@@ -29,5 +29,11 @@ Accompanying source code can be found on the [CamelForth](http://www.camelforth.
 
 #### References
 
-[Papers](http://www.bradrodriguez.com/papers/index.html)
-[Tools](http://www.t-recursive.com/index.html)
+* [Papers](http://www.bradrodriguez.com/papers/index.html)
+* [Tools](http://www.t-recursive.com/index.html)
+
+#### Further Reading
+
+* [Build Your Own (Cross-) Assembler...in Forth](/chapters/forth/code/toc/tcjassem.txt)
+* [Build Your Own Assembler, Part 2: a 6809 Forth Assembler](/chapters/forth/code/toc/6809asm.txt)
+* [6809 Forth Assembler Listing](/chapters/forth/code/toc/6809asmlisting.txt)
