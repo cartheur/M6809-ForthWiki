@@ -1,10 +1,7 @@
 ## MULTIPROCESSING FOR THE IMPOVERISHED
-### Part 1: a 6809 Uniprocessor
+### Part 1: The 6809 Uniprocessor
 
-#### INTRODUCTION
-"We need hardware articles," says TCJ's Editor and Publisher. So I'm taking a short break from my discussion of Forth kernels, to let you in on the Big Picture -- my Grand Project toward which all these articles are leading: a multiprocessor 6809 system. This month I'll describe the 6809 core; in a future issue I'll describe the multiprocessor bus and arbitration logic. 
-
-#### HISTORY AND DESIGN DECISIONS
+#### INTRODUCTION: HISTORY AND DESIGN DECISIONS
 Why on earth would anyone build a multiprocessor 6809 system?
 
 Several years ago, when I was a "captive" employee, I developed a Forth kernel for a multiprocessor 68000 system. (I believe this was the first published application of Forth to tightly-coupled multiprocessors [ROD89].) The system employed a VME-bus crate, four 68000 processor boards, and a common RAM board . . . and cost about $10,000. Alas, I left that employer shortly afterward. 
