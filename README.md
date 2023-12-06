@@ -4,7 +4,7 @@ A detailed study of the quest for a multiprocessing system around the Motorola 6
 ## Table of Contents
 
 ### Multiprocessing for the Impoverished
-This series originally appeared in _The Computer Journal #61_ (May/June 1993).
+This series originally appeared in _The Computer Journal_, Number 61, June 1993.
 
 * [Chapter One](/chapters/chapter-one.md)
 * [Chapter Two](/chapters/chapter-two.md)
@@ -13,7 +13,7 @@ This series originally appeared in _The Computer Journal #61_ (May/June 1993).
 * [Chapter Five](/chapters/chapter-five.md)
 
 ### Moving Forth: A series on writing Forth kernels
-This article first appeared in _The Computer Journal #59_ (January/February 1993).
+This article first appeared in _The Computer Journal_, Number 59, January 1993.
 Accompanying source code can be found on the [CamelForth](http://www.camelforth.com/news.php) page.
 
 * Prologue: What is [Forth?](https://en.wikipedia.org/wiki/Forth_(programming_language))
