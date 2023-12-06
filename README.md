@@ -1,4 +1,4 @@
-#The Motorola 6809 and the Forth Programming Language
+# The Motorola 6809 and the Forth Programming Language
 A detailed study of the quest for a multiprocessing system around the Motorola 6809.
 
 ## Table of Contents
@@ -12,7 +12,7 @@ This series originally appeared in _The Computer Journal #61_ (May/June 1993).
 * [Chapter Four](/chapters/chapter-four.md)
 * [Chapter Five](/chapters/chapter-five.md)
 
-###Moving Forth: A series on writing Forth kernels
+### Moving Forth: A series on writing Forth kernels
 This article first appeared in _The Computer Journal #59_ (January/February 1993).
 Accompanying source code can be found on the [CamelForth](http://www.camelforth.com/news.php) page.
 
@@ -27,24 +27,24 @@ Accompanying source code can be found on the [CamelForth](http://www.camelforth.
 * [Part 8](/chapters/forth/part-eight.md) CamelForth for the 6809
 * [Multitasking 8051 CamelForth](/chapters/docs/8051task.pdf)
 
-####References
+#### References
 
 * [Papers](http://www.bradrodriguez.com/papers/index.html)
 * [Tools](http://www.t-recursive.com/index.html)
 
-####Further Reading
+#### Further Reading
 
 * [Build Your Own (Cross-) Assembler...in Forth](/chapters/forth/code/toc/tcjassem.txt)
 * [Build Your Own Assembler, Part 2: a 6809 Forth Assembler](/chapters/forth/code/toc/6809asm.txt)
 * [6809 Forth Assembler Listing](/chapters/forth/code/toc/6809asmlisting.txt)
 
-####Computer Programs
+#### Computer Programs
 
 * [CamelForth for the 6809, with Chromium metacompiler](/chapters/forth/code/toc/cam09-10.zip)
 * [CamelForth for the 8051, w/multitasker](/chapters/forth/code/toc/cam51-16.zip)
 * [CamelForth for the Z80 under CP/M](/chapters/forth/code/toc/cam80-12.zip)
 * [CamelForth for the 8086 under MS-DOS](/chapters/forth/code/toc/cam86-10.zip)
 
-####Camelforth Repository
+#### Camelforth Repository
 
 * [Camelforth sources](https://code.launchpad.net/~bj-camelforth/camelforth/trunk)
