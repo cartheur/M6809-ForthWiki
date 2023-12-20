@@ -1,4 +1,4 @@
-# The Motorola 6809 and the Forth Programming Language
+## The Motorola 6809 and the Forth Programming Language
 A detailed study of the quest for a multiprocessing system around the Motorola 6809.
 
 ## Table of Contents
