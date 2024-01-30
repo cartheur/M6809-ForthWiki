@@ -2,7 +2,7 @@
 
 From the design -- and lest we forget the [vhdl](https://vhdplus.com/docs/getstarted/#install-vhdplus-ide) challenge
 
-![design](/src/design.png)
+![design](/src/sneak-peek.png)
 
 -- to the first code block
 
